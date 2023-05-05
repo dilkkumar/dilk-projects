@@ -1,0 +1,15 @@
+                                    Code Explaination:-
+
+* The signalQuality function calculates the signal quality of a tower at a given coordinate, 
+  by computing the Euclidean distance between the tower and the coordinate, and applying 
+  the signal quality formula given in the problem statement. If the distance is greater than 
+  the radius, the tower is not reachable and its signal quality is 0.
+
+* The networkQuality function calculates the network quality at a given coordinate, 
+  by iterating over all towers and summing up their signal qualities.
+
+* The findBestLocation function iterates over all integral coordinates in the range [0,50] x [0,50] and finds 
+  the one with maximum network quality. If there are multiple coordinates with the same network quality, 
+  it returns the lexicographically minimum one.
+
+* In the main function, we define the input towers and radius, call the findBestLocation function, and print the result.
